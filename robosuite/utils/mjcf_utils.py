@@ -827,6 +827,13 @@ def get_ids(sim, elements, element_type="geom", inplace=False):
     Returns:
         str or list or dict: IDs corresponding to @elements.
     """
+
+    if elements == "obj0_g0_visual" or elements == "obj0_g0":
+        return elements
+
+    if elements == "obj1_g0_visual" or elements == "obj1_g0":
+        return elements
+
     if not inplace:
         # Copy elements first so we don't write to the underlying object
         elements = deepcopy(elements)
