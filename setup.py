@@ -20,7 +20,7 @@ setup(
         "scipy>=1.2.3",
         "mujoco>=2.3.0",
         "Pillow",
-        "opencv-python-headless",
+        "opencv-python",
         "termcolor",
     ],
     eager_resources=["*"],
