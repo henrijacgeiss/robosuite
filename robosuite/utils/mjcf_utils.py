@@ -828,10 +828,7 @@ def get_ids(sim, elements, element_type="geom", inplace=False):
         str or list or dict: IDs corresponding to @elements.
     """
 
-    if elements == "obj0_g0_visual" or elements == "obj0_g0":
-        return elements
-
-    if elements == "obj1_g0_visual" or elements == "obj1_g0":
+    if isinstance(elements, str) and 'g0' in elements:
         return elements
 
     if not inplace:

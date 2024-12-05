@@ -27,8 +27,6 @@ try:
 except ModuleNotFoundError as exc:
     raise ImportError(
         "Unable to load module hid, required to interface with SpaceMouse. "
-        "Only macOS is officially supported. Install the additional "
-        "requirements with `pip install -r requirements-extra.txt`"
     ) from exc
 
 import robosuite.macros as macros
