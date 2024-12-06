@@ -4,7 +4,7 @@ opencv renderer class.
 try:
     import cv2
 except Exception as e:
-    raise Exception("Couldn't import cv2. This might cause an error down the line with certain functionality.")
+    print("Couldn't import cv2. This might cause an error down the line with certain functionality.")
 import numpy as np
 
 
